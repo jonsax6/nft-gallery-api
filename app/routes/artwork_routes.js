@@ -31,14 +31,14 @@ const router = express.Router()
 // GET /examples
 router.get('/artwork', requireToken, (req, res, next) => {
   Artwork.find()
-    .then(artworks => {
+    .then(artwork => {
       // `examples` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
-      return artworks.map(art => art.toObject())
+      return artwork.map(art => art.toObject())
     })
     // respond with status 200 and JSON of the examples
-    .then(artworks => res.status(200).json({ artworks: artworks }))
+    .then(artwork => res.status(200).json({ artwork: artwork }))
     // if an error occurs, pass it to the handler
     .catch(next)
 })
@@ -63,8 +63,8 @@ router.post('/artwork', requireToken, (req, res, next) => {
 
   Artwork.create(req.body.artwork)
     // respond to succesful `create` with status 201 and JSON of new "example"
-    .then(art => {
-      res.status(201).json({ art: art.toObject() })
+    .then(artwork => {
+      res.status(201).json({ artwork: artwork.toObject() })
     })
     // if an error occurs, pass it off to our error handler
     // the error handler needs the error message and the `res` object so that it
@@ -100,11 +100,11 @@ router.patch('/artwork/:id', requireToken, removeBlanks, (req, res, next) => {
 router.delete('/artwork/:id', requireToken, (req, res, next) => {
   Artwork.findById(req.params.id)
     .then(handle404)
-    .then(art => {
+    .then(artwork => {
       // throw an error if current user doesn't own `example`
-      requireOwnership(req, art)
-      // delete the art ONLY IF the above didn't throw
-      art.deleteOne()
+      requireOwnership(req, artwork)
+      // delete the artwork ONLY IF the above didn't throw
+      artwork.deleteOne()
     })
     // send back 204 and no content if the deletion succeeded
     .then(() => res.sendStatus(204))
