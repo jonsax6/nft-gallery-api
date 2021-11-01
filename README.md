@@ -47,7 +47,7 @@ MongoDB
 ---
 ## User Story:
 
-In V1 of the website (November 1, 2021):
+### In V1 of the website (November 1, 2021):
 
 As an unregistered user, I can sign up with email and password.
 
@@ -61,7 +61,7 @@ As an unregistered user, I can see all of the artist's works.
 
 As a signed in user, I can add new artwork to the gallery catalog.  The Gallery can remove these art submissions at their discretion.
 
-In V2 of the website (mid to late November 2021):
+### In V2 of the website (mid to late November 2021):
 As a registered user, I can purchase a work of art using the metamask chrome browser plug in and buy art using Ethereum.
 
 ## Wireframes
@@ -74,4 +74,4 @@ As a registered user, I can purchase a work of art using the metamask chrome bro
 
 Current implementation is V1.
 
-V2 implementation will include artist profiles, featured artists, and specific artist catalogs.
+V2 implementation will include blockchain integration, artist profiles, featured artists, and specific artist catalogs.
