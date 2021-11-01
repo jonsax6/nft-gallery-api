@@ -48,11 +48,17 @@ MongoDB
 ## User Story:
 
 In V1 of the website (November 1, 2021):
+
 As an unregistered user, I can sign up with email and password.
+
 As a registered user, I can sign in with email and password.
+
 As a signed in user, I can change password.
+
 As a signed in user, I can sign out.
+
 As an unregistered user, I can see all of the artist's works.
+
 As a signed in user, I can add new artwork to the gallery catalog.  The Gallery can remove these art submissions at their discretion.
 
 In V2 of the website (mid to late November 2021):
