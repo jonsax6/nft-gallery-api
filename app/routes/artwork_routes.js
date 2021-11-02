@@ -50,7 +50,7 @@ router.get('/artwork/:id', (req, res, next) => {
   Artwork.findById(req.params.id)
     .then(handle404)
     // if `findById` is succesful, respond with 200 and "example" JSON
-    .then(art => res.status(200).json({ art: art.toObject() }))
+    .then(art => res.status(200).json({ artwork: art.toObject() }))
     // if an error occurs, pass it to the handler
     .catch(next)
 })

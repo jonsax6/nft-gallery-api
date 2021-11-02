@@ -27,22 +27,38 @@ https://github.com/jonsax6/nft-gallery-api
 Zyzygy Studios is an art gallery site where you can view all artist's works, and then arrange for the purchase of that art. In V1 for the site, patrons will only be able to view the art. The next update for the website will integrate with the blockchain, and patrons will have the ability to directly purchase the art from the studio using the metamask browser extension. This feature is currently under development and will be available in mid to late November 2021. So stay tuned!  
 
 ---
-The website was created using React.js, Express and MongoDB as part of an educational final project for General Assembly's Software Engineering Intensive in October 2021 by Jonathan Cole.
+This API was created with Javascript, Express and MongoDB as part of an educational final project for General Assembly's Software Engineering Intensive in October 2021 by Jonathan Cole.
+
+Unathenticated Routes:
+
+|HTTP Method |URL Path|Result|Action |
+| :---    |    ---:   |   ---: |   ---: |
+| GET | /artwork | read all art in catalog | index |
+| GET | /artwork/:id | read single artwork | show or retrieve |
+|POST| /sign-up| create new user | create|
+|POST| /sign-in| sign in existing user | sign in|
+
+Authenticated Routes:
+
+|HTTP Method |URL Path|Result|Action |
+| :---    |    ---:   |   ---: |   ---: |
+| GET | /artwork/:id | read single artwork | show or retrieve |
+| POST | /artwork | create a new artwork | create |
+|PATCH| /artwork/:id | update a user's owned art | update|
+|DELETE| /artwork/:id | remove a user's owned art from collection | sign out|
+|DELETE| /sign-out| sign out user| sign out|
+
 
 ---
 ## Specific Technologies Used:
 
 JavaScript
 
-React.js
-
-Material-UI
-
-Axios
-
 Express
 
 MongoDB
+
+Mongoose
 
 ---
 ## User Story:
@@ -64,12 +80,9 @@ As a signed in user, I can add new artwork to the gallery catalog.  The Gallery 
 ### In V2 of the website (mid to late November 2021):
 As a registered user, I can purchase a work of art using the metamask chrome browser plug in and buy art using Ethereum.
 
-## Wireframes
-![LEAN2](https://i.ibb.co/yQ95nKX/camp-io-pg-1.png)
+## ERD (created using Figma)
+![ERD](https://i.imgur.com/o7j9EI1.png)
 
-![LEAN2](https://i.ibb.co/db72XdY/camp-io-pg-2.png)
-
-![LEAN2](https://i.ibb.co/55SZh5h/camp-io-pg-3.png)
 ---
 
 Current implementation is V1.
