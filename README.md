@@ -72,12 +72,18 @@ As a signed in user, I can change password.
 
 As a signed in user, I can sign out.
 
-As an unregistered user, I can see all of the artist's works.
+As a signed in user, I can add artwork to the catalog
 
-As a signed in user, I can add new artwork to the gallery catalog.  The Gallery can remove these art submissions at their discretion.
+As a signed in user, I can update artwork that I own
+
+As a signed in user, I can remove artwork that I own
+
+As an unregistered user, I can see all of the artist's works.
 
 ### In V2 of the website (mid to late November 2021):
 As a registered user, I can purchase a work of art using the metamask chrome browser plug in and buy art using Ethereum.
+
+The Gallery admin can remove these art submissions at their discretion.
 
 ## ERD (created using Figma)
 ![ERD](https://i.imgur.com/o7j9EI1.png)
