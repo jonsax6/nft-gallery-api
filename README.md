@@ -20,7 +20,7 @@ https://jonsax6.github.io/nft-gallery-client/
 https://rocky-ocean-73265.herokuapp.com
 
 ### Client Repo: 
-https://github.com/jonsax6/nft-gallery-api
+https://github.com/jonsax6/nft-gallery-client
 
 ## About our website:
 
