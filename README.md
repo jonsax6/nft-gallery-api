@@ -44,7 +44,7 @@ Authenticated Routes:
 | GET | /artwork/:id | read single artwork | show or retrieve |
 | POST | /artwork | create a new artwork | create |
 |PATCH| /artwork/:id | update a user's owned art | update|
-|DELETE| /artwork/:id | remove a user's owned art from collection | sign out|
+|DELETE| /artwork/:id | remove a user's owned art from collection | remove |
 |DELETE| /sign-out| sign out user| sign out|
 
 
