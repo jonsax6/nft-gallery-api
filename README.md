@@ -34,7 +34,6 @@ Unathenticated Routes:
 |HTTP Method |URL Path|Result|Action |
 | :---    |    ---:   |   ---: |   ---: |
 | GET | /artwork | read all art in catalog | index |
-| GET | /artwork/:id | read single artwork | show or retrieve |
 |POST| /sign-up| create new user | create|
 |POST| /sign-in| sign in existing user | sign in|
 
