@@ -68,7 +68,7 @@ As an unregistered user, I can sign up with email and password.
 
 As a registered user, I can sign in with email and password.
 
-As a signed in user, I can change password.
+As a signed in user, I can change password.n
 
 As a signed in user, I can sign out.
 
