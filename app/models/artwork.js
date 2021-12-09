@@ -13,7 +13,7 @@ const artworkSchema = new mongoose.Schema({
     type: Number,
     required: false
   },
-  ipfsImageUrl: {
+  image: {
     type: String,
     required: true
   },
