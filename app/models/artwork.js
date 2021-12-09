@@ -20,10 +20,6 @@ const artworkSchema = new mongoose.Schema({
   displayImageUrl: {
     type: String
   },
-  releaseDate: {
-    type: String,
-    required: true
-  },
   medium: {
     type: String,
     required: true
@@ -45,6 +41,10 @@ const artworkSchema = new mongoose.Schema({
   },
   publishingHistory: {
     type: String
+  },
+  releaseDate: {
+    type: String,
+    required: true
   },
   notes: {
     type: String
