@@ -17,7 +17,7 @@ const artworkSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  displayImgUrl: {
+  displayImageUrl: {
     type: String
   },
   releaseDate: {
