@@ -13,9 +13,12 @@ const artworkSchema = new mongoose.Schema({
     type: Number,
     required: false
   },
-  imageUrl: {
+  ipfsImageUrl: {
     type: String,
     required: true
+  },
+  displayImgUrl: {
+    type: String
   },
   releaseDate: {
     type: String,
@@ -44,6 +47,9 @@ const artworkSchema = new mongoose.Schema({
     type: String
   },
   notes: {
+    type: String
+  },
+  contractAddress: {
     type: String
   },
   owner: {
