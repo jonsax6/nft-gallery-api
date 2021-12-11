@@ -52,6 +52,9 @@ const artworkSchema = new mongoose.Schema({
   contractAddress: {
     type: String
   },
+  tokenId: {
+    type: Number
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
