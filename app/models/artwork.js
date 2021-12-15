@@ -55,6 +55,9 @@ const artworkSchema = new mongoose.Schema({
   tokenId: {
     type: Number
   },
+  lastMinted: {
+    type: Number
+  },
   isMinted: {
     type: Boolean
   },
