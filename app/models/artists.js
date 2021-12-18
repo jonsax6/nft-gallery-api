@@ -14,6 +14,10 @@ const artistsSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
+    account: {
+      type: String,
+      required: true,
+    },
     approved: {
       type: Boolean,
       required: true,
