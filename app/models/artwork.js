@@ -61,6 +61,9 @@ const artworkSchema = new mongoose.Schema({
   isMinted: {
     type: Boolean
   },
+  tokenOwner: {
+    type: String
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
