@@ -31,14 +31,14 @@ const router = express.Router()
 // GET /examples
 router.get('/artists', (req, res, next) => {
   Artists.find()
-    .then((artist) => {
+    .then((artists) => {
       // `examples` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
-      return artist.map((art) => art.toObject())
+      return artists.map((artists) => artists.toObject())
     })
     // respond with status 200 and JSON of the examples
-    .then((artist) => res.status(200).json({ artist: artist }))
+    .then((artists) => res.status(200).json({ artists: artists }))
     // if an error occurs, pass it to the handler
     .catch(next)
 })
@@ -59,9 +59,9 @@ router.get('/artists/:id', (req, res, next) => {
 // POST /examples
 router.post('/artists', requireToken, (req, res, next) => {
   // set owner of new example to be current user
-  req.body.artists.owner = req.user.id
+  req.body.artist.owner = req.user.id
 
-  Artists.create(req.body.artwork)
+  Artists.create(req.body.artist)
     // respond to succesful `create` with status 201 and JSON of new "example"
     .then((artist) => {
       res.status(201).json({ artist: artist.toObject() })
