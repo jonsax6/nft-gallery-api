@@ -6,6 +6,7 @@ const cors = require('cors')
 // require route files
 const artistsRoutes = require('./app/routes/artists_routes')
 const artworkRoutes = require('./app/routes/artwork_routes')
+const tokenOwnerRoutes = require('./app/routes/tokenOwner_routes')
 const userRoutes = require('./app/routes/user_routes')
 
 // require middleware
@@ -59,6 +60,7 @@ app.use(requestLogger)
 // register route files
 app.use(artistsRoutes)
 app.use(artworkRoutes)
+app.use(tokenOwnerRoutes)
 app.use(userRoutes)
 
 // register error handling middleware
