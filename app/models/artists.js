@@ -22,6 +22,11 @@ const artistsSchema = new mongoose.Schema(
       type: Boolean,
       required: true,
     },
+    owner: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+    },
   },
   {
     timestamps: true,
